@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text Changer</title>
+	<link rel="icon" type="image/jpg" href="res/pen.jpg">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<br><br><br>
+<center>
+	<ul>
+		<li>
+			<select class="fs" onchange="police()" id="police">
+				<option> Font Style</option>
+				<option>Arial </option>	
+				<option>Times New Roman</option>
+				<option>Verdana</option> 
+			</select>
+    	</li>
+		 <li> 
+		 	<select class="fs" onchange="taille()" id="taille"> 
+	   			<option>Font Size</option> 
+	    		<option>20px</option> 
+	    		<option>25px</option> 
+			    <option>30px</option> 
+			    <option>35px</option> 
+			    <option>40px</option> 
+	    	</select>
+	    </li>
+		 <li> <button class="bui" onclick="bold()"> <strong>B</strong></button> </li>
+		 <li> <button class="bui" onclick="italic()"> <i>I</i></button> </li>
+		 <li> <button class="bui" onclick="underline()"> <ins>U</ins></button> </li>
+	</ul> <br><br><br><br>
+</center>
+<textarea id="texte"></textarea>	
+</body>
+<script src="js/main.js"></script>
+</html>
